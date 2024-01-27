@@ -1,4 +1,7 @@
 const {Shape, Circle, Square, Triangle} = require('./shapes.js');
+const { expect, test } = require('@jest/globals');
+const { render } = require('./shapes.js');
+
 test('set text in circle constructor', () => {
     let logo = new Circle()
     console.log(logo)
@@ -6,7 +9,6 @@ test('set text in circle constructor', () => {
     logo.setTextColor('red')
     logo.setShapeColor('blue')
     console.log(logo)
-    console.log(logo.render())
     expect(logo.text).toBe('bob');
 });
 
@@ -17,7 +19,6 @@ test('set text in square constructor', () => {
     logo.setTextColor('red')
     logo.setShapeColor('blue')
     console.log(logo)
-    console.log(logo.render())
     expect(logo.text).toBe('bob');
 });
 
@@ -28,7 +29,6 @@ test('set text in triangle constructor', () => {
     logo.setTextColor('red')
     logo.setShapeColor('blue')
     console.log(logo)
-    console.log(logo.render())
     expect(logo.text).toBe('bob');
 });
 
@@ -39,6 +39,5 @@ test('set text in shape constructor', () => {
     logo.setTextColor('red')
     logo.setShapeColor('blue')
     console.log(logo)
-    console.log(logo.render())
     expect(logo.text).toBe('bob');
 });

@@ -48,7 +48,7 @@ function init() {
     logo.setTextColor(answers.color);
     logo.setShapeColor(answers.shapeColor);
 
-    const template = logo.render();
+    const template = logo.render()
     console.log(template);
     writeToFile('/product/logo.svg', template )
     })
