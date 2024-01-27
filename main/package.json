@@ -4,5 +4,17 @@
   },
   "devDependencies": {
     "jest": "^29.7.0"
-  }
+  },
+  "name": "david",
+  "version": "1.0.0",
+  "description": "svg logo maker",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "David Perez",
+  "license": "MIT"
 }

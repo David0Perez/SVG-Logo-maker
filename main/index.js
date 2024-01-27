@@ -45,9 +45,12 @@ function init() {
         logo = new Triangle();
     }
     logo.setText(answers.character);
-    logo.setTextColor(answers.textColor);
+    logo.setTextColor(answers.color);
     logo.setShapeColor(answers.shapeColor);
-    writeToFile('index.html', logo.render());
-    });
+
+    const template = logo.render();
+    console.log(template);
+    writeToFile('/product/logo.svg', template )
+    })
 }
 init();
